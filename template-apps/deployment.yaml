@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: repo-app1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: repo-app1
+  template:
+    metadata:
+      labels:
+        app: repo-app1
+    spec:
+      containers:
+        - name: repo-app1
+          image: vinicius/repo-app1:v9.0.3
+          ports:
+            - containerPort: 3000
