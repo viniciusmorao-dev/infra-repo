@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: repo-app1
-          image: vinicius/repo-app1:v9.0.3
+          image: viniciusmoraodev/repo-app1:v9.0.3
           ports:
-            - containerPort: 3000
+            - containerPort: 80
